@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="pb-12 md:pb-0 bg-veryLightGrey md:bg-white flex flex-col items-center gap-8 md:flex-row">
+    <footer className="pb-12 md:pb-0 bg-veryLightGrey md:bg-white flex flex-col items-center gap-8 md:flex-row lg:px-[165px]">
       <div className="md:flex md:items-center md:bg-veryLightGrey md:w-5/6">
         <Link href="/">
           <div className="-mt-12 md:mt-0 w-32 h-32 bg-veryDarkBlue grid place-content-center">
@@ -45,12 +45,13 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="md:-ml-24 flex py-4 px-8 w-64 bg-veryDarkBlue hover:bg-darkGray text-white items-center justify-between cursor-pointer transition">
-        <Link href="/portfolio" className=" font-bold">
-          See Our Portfolio
-        </Link>
+      <Link
+        href="/portfolio"
+        className="font-bold md:-ml-24 flex py-4 px-8 w-64 bg-veryDarkBlue hover:bg-darkGray text-white items-center justify-between cursor-pointer transition"
+      >
+        <span>See Our Portfolio</span>
         <BsArrowRight color="white" size={25} />
-      </div>
+      </Link>
     </footer>
   );
 };
