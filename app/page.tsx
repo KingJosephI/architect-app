@@ -4,12 +4,13 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { FeaturedCard } from "./common";
 import { portfolioData } from "./portfolio/data";
+import { BsArrowRight } from "react-icons/bs";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
+    <main className="text-veryDarkBlue">
       Project Paramour Project made for an art museum near Southwest London.
       Project Paramour is a statement of bold, modern architecture. See Our
       Portfolio Seraph Station The Seraph Station project challenged us to
@@ -31,13 +32,20 @@ export default function Home() {
       project. This allows us to work in harmony the surrounding area to create
       truly stunning projects that will stand the test of time. Small team, big
       ideas About Us
-      <section>
-        <div>
-          <h2>Featured</h2>
-          <Link href="/portfolio">See all</Link>
+      <section className="grid px-8 md:mb-[200px] md:px-[40px] lg:px-[165px]">
+        <div className="flex justify-between pb-16">
+          <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px]">
+            Featured
+          </h2>
+          <div className="hidden px-10 md:flex gap-2 items-center bg-veryDarkBlue text-white">
+            <Link href="/portfolio" className="font-bold text-[18px] leading-6">
+              See all
+            </Link>
+            <BsArrowRight className="text-2xl" />
+          </div>
         </div>
 
-        <section className="grid gap-6 pb-32 place-items-center lg:grid-cols-3 md:px-[40px] lg:px-[165px]">
+        <section className="grid gap-6 place-items-center lg:grid-cols-3 ">
           <FeaturedCard
             title="Project Del Sol"
             image={portfolioData[3].image}
@@ -54,6 +62,13 @@ export default function Home() {
             number={3}
           />
         </section>
+
+        <div className="md:hidden mt-6 mb-32 px-10 py-5 flex gap-2 items-center justify-center bg-veryDarkBlue text-white">
+          <Link href="/portfolio" className="font-bold text-[18px] leading-6">
+            See all
+          </Link>
+          <BsArrowRight className="text-2xl" />
+        </div>
       </section>
     </main>
   );

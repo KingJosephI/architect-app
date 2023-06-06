@@ -21,7 +21,7 @@ const PortfolioCard = ({ title, date, image }: IPortfolioCard) => {
         <img
           src={image.mobile}
           alt="Porfolio Cover Illustration"
-          className="hover:opacity-80 lg:w-[354px] lg:h-[560px]"
+          className="hover:opacity-80 w-screen"
         />
       </picture>
       <div className="absolute bottom-8 left-6">
