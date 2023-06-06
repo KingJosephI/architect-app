@@ -1,20 +1,12 @@
 "use client";
-
-import { Inter } from "next/font/google";
-// import { useRouter } from "next/router";
 import { FeaturedCard } from "./common";
 import { portfolioData } from "./portfolio/data";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
-  // const router = useRouter();
-  // const navigateTo = (path: string) => router.push(path);
-
   return (
-    <main className="text-veryDarkBlue">
+    <main className={`text-veryDarkBlue`}>
       Project Paramour Project made for an art museum near Southwest London.
       Project Paramour is a statement of bold, modern architecture. See Our
       Portfolio Seraph Station The Seraph Station project challenged us to
@@ -41,10 +33,7 @@ export default function Home() {
           <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px]">
             Featured
           </h2>
-          <div
-            // onClick={() => navigateTo("/portfolio")}
-            className="hidden hover:cursor-pointer hover:bg-darkGray px-10 md:flex gap-2 items-center bg-veryDarkBlue text-white"
-          >
+          <div className="hidden hover:cursor-pointer hover:bg-darkGray px-10 md:flex gap-2 items-center bg-veryDarkBlue text-white">
             <Link href="/portfolio" className="font-bold text-[18px] leading-6">
               See all
             </Link>

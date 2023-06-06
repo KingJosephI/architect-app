@@ -1,8 +1,12 @@
-import { Inter } from "next/font/google";
+import { League_Spartan } from "next/font/google";
 import { Header, Footer } from "./common";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const leagueSpartanFont = League_Spartan({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  style: ["normal"],
+});
 
 export const metadata = {
   title: "Architect Studio",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={leagueSpartanFont.className}>
         <Header />
         {children}
         <Footer />
