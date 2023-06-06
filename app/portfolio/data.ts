@@ -1,4 +1,4 @@
-export   const portfolioData = [
+export const portfolioData = [
     {
       id: 1,
       title: "Seraph Station",
