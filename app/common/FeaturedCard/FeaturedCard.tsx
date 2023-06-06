@@ -28,7 +28,7 @@ const FeaturedCard = ({ title, number, image }: IPortfolioCard) => {
           View All Projects
         </span>
       </div>
-      <span className="absolute top-0 -right-0 lg:-right-7 hidden md:block text-[200px] leading-[200px] -tracking-[5px] font-bold text-[#ffffff9c]">
+      <span className="absolute top-0 -right-0 lg:-right-4 hidden md:block text-[200px] leading-[200px] -tracking-[5px] font-bold text-[#ffffff9c]">
         {number}
       </span>
     </article>

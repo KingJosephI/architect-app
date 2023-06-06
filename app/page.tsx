@@ -26,8 +26,36 @@ export default function Home() {
       to high-rise buildings, we create spaces that inspire and delight. We work
       closely with our clients so that we understand the intricacies of each
       project. This allows us to work in harmony the surrounding area to create
-      truly stunning projects that will stand the test of time. Small team, big
-      ideas About Us
+      truly stunning projects that will stand the test of time. About Us
+      <section className="relative md:mx-[40px] lg:mx-[165px]">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcSet="/assets/home/desktop/image-small-team.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcSet="/assets/home/tablet/image-small-team.jpg"
+          />
+          <img
+            src="/assets/home/mobile/image-small-team.jpg"
+            alt="Porfolio Cover Illustration"
+            // className="hover:opacity-80 "
+          />
+        </picture>
+        <article className="absolute bottom-[30%] left-8 md:left-[58px] lg:left-[190px]">
+          <h2 className="text-white font-bold text-7xl leading-[64px] -tracking-[2px]">
+            <div>Small team,</div>
+            big ideas
+          </h2>
+          <div className="hover:cursor-pointer hover:bg-darkGray px-10 py-5 flex gap-2 items-center bg-veryDarkBlue text-white">
+            <Link href="/portfolio" className="font-bold text-[18px] leading-6">
+              About Us
+            </Link>
+            <BsArrowRight className="text-2xl" />
+          </div>
+        </article>
+      </section>
       <section className="grid px-8 md:mb-[200px] md:px-[40px] lg:px-[165px]">
         <div className="flex justify-between pb-16">
           <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px]">

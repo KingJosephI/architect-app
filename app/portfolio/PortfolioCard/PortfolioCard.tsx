@@ -1,5 +1,4 @@
 "use client";
-
 interface ICoverImage {
   desktop: string;
   tablet: string;
