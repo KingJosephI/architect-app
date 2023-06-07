@@ -31,7 +31,7 @@ const LeaderCard = ({
           </Link>
         </div>
       </div>
-      <div>
+      <div className="pt-[15px]">
         <h3 className="font-bold text-[32px] leading-10">{name}</h3>
         <p className="font-medium text-lg text-veryDarkBlue/80">{jobTitle} </p>
       </div>
