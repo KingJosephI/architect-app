@@ -132,7 +132,7 @@ export default function Home() {
           </Link>
         </article>
       </section>
-      <section className="grid px-8 md:mb-[200px] md:px-[40px] lg:px-[165px]">
+      <section className="grid px-8  md:px-[40px] lg:px-[165px]">
         <div className="flex justify-between pb-16">
           <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px]">
             Featured
