@@ -4,8 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <header className="flex items-center px-8 justify-between md:justify-start  lg:px-[165px] py-8 md:py-14 md:px-24">
-      {/* <div> */}
+    <header className="flex items-center px-8 justify-between md:justify-start  lg:px-[165px] py-8 md:py-14 md:px-10">
       <Link href="/">
         <Image
           src="/assets/logo-black.svg"
@@ -14,7 +13,6 @@ const Header = () => {
           height={32.03}
         />
       </Link>
-      {/* </div> */}
 
       <ul className="hidden md:flex md:items-center md:gap-6 md:pl-[95px]">
         <li>

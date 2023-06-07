@@ -9,7 +9,7 @@ export const metadata = {
 const Portfolio = () => {
   return (
     <main>
-      <section className="grid gap-6 pb-32 place-items-center lg:grid-cols-3 md:px-[40px] lg:px-[165px]">
+      <section className="grid gap-6 pb-32 place-items-center lg:grid-cols-3 px-8 md:px-[40px] lg:px-[165px]">
         {portfolioData.map(({ title, date, image, id }) => (
           <PortfolioCard key={id} title={title} date={date} image={image} />
         ))}
