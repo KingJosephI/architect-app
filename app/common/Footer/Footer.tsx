@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="pb-12 md:pb-0 bg-veryLightGrey md:bg-white flex flex-col items-center gap-8 md:flex-row lg:px-[165px]">
+    <footer className="mt-24 md:mt-40 pb-12 md:pb-0 bg-veryLightGrey md:bg-white flex flex-col items-center gap-8 md:flex-row lg:px-[165px]">
       <div className="md:flex md:items-center md:bg-veryLightGrey md:w-5/6">
         <Link href="/">
           <div className="-mt-12 md:mt-0 w-32 h-32 bg-veryDarkBlue grid place-content-center">
