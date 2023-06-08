@@ -7,6 +7,41 @@ import { leaders } from "./leaders";
 const About = () => {
   return (
     <main>
+      <section className="md:px-10 lg:px-[165px]">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcSet="/assets/about/desktop/image-hero.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcSet="/assets/about/tablet/image-hero.jpg"
+          />
+          <img
+            src="/assets/about/mobile/image-hero.jpg"
+            alt="Porfolio Cover Illustration"
+            className="w-screen lg:w-[354px] lg:h-[560px]"
+          />
+        </picture>
+
+        <div className="-mt-24 md:mt-0">
+          <h1 className="hidden md:block font-bold text-[120px] leading-[200px] -tracking-[3px] text-veryLightGrey">
+            About
+          </h1>
+          <div className="relative">
+            <h2 className="pl-8 w-[90%] font-bold pt-16 bg-white text-5xl leading-[52px] -tracking-[1.2] pb-[21px]">
+              Your team of professionals
+            </h2>
+            <p className="px-8 text-lg leading-6 font-medium text-darkGray">
+              Our small team of world-class professionals will work with you
+              every step of the way. Strong relationships are at the core of
+              everything we do. This extends to the relationship our projects
+              have with their surroundings.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="px-8 md:px-10 lg:px-[165px] flex gap-[100px]  py-[100px] lg:py-[200px]">
         <div>
           <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px] lg:text-7xl lg:leading-[64px] lg:-tracking-[2px]">
