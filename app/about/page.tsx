@@ -7,29 +7,30 @@ import { leaders } from "./leaders";
 const About = () => {
   return (
     <main>
-      <section className="md:px-10 lg:px-[165px]">
-        <picture>
-          <source
-            media="(min-width:1024px)"
-            srcSet="/assets/about/desktop/image-hero.jpg"
-          />
-          <source
-            media="(min-width:768px)"
-            srcSet="/assets/about/tablet/image-hero.jpg"
-          />
-          <img
-            src="/assets/about/mobile/image-hero.jpg"
-            alt="Porfolio Cover Illustration"
-            className="w-screen lg:w-[354px] lg:h-[560px]"
-          />
-        </picture>
-
-        <div className="-mt-24 md:mt-0">
-          <h1 className="hidden md:block font-bold text-[120px] leading-[200px] -tracking-[3px] text-veryLightGrey">
+      <section className="md:mx-10 lg:px-[165px] md:relative lg:flex">
+        <div className="md:w-full md:h-full">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcSet="/assets/about/desktop/image-hero.jpg"
+            />
+            <source
+              media="(min-width:768px)"
+              srcSet="/assets/about/tablet/image-hero.jpg"
+            />
+            <img
+              src="/assets/about/mobile/image-hero.jpg"
+              alt="Porfolio Cover Illustration"
+              className="w-screen md:h-screen lg:w-[354px] lg:h-[560px]"
+            />
+          </picture>
+        </div>
+        <div className="-mt-24 md:mt-0 md:absolute md:bottom-0 md:right-0 md:left-20  lg:relative ">
+          <h1 className="hidden md:block md:relative md:z-10 md:-mb-28 md:text-right font-bold text-[120px] md:text-[200px] md:font-medium leading-[200px] -tracking-[3px] text-veryLightGrey">
             About
           </h1>
-          <div className="relative">
-            <h2 className="pl-8 w-[90%] font-bold pt-16 bg-white text-5xl leading-[52px] -tracking-[1.2] pb-[21px]">
+          <div className="relative md:bg-white md:py-20 md:pt-40 md:px-10">
+            <h2 className="pl-8 w-[90%]  font-bold pt-16 bg-white text-5xl md:text-7xl leading-[52px] md:leading-[64px] -tracking-[1.2px] md:-tracking-[2px] pb-[21px] ">
               Your team of professionals
             </h2>
             <p className="px-8 text-lg leading-6 font-medium text-darkGray">
