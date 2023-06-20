@@ -1,4 +1,6 @@
 "use client";
+
+import styles from "./PortfolioCard.module.css";
 interface ICoverImage {
   desktop: string;
   tablet: string;
@@ -20,7 +22,8 @@ const PortfolioCard = ({ title, date, image }: IPortfolioCard) => {
         <img
           src={image.mobile}
           alt="Porfolio Cover Illustration"
-          className="hover:opacity-80 w-screen"
+          className={`${styles.image} hover:opacity-80 w-screen`}
+          loading="lazy"
         />
       </picture>
       <div className="absolute bottom-8 left-6">
