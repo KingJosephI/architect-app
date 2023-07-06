@@ -7,7 +7,7 @@ import { leaders } from "./leaders";
 const About = () => {
   return (
     <main>
-      <section className="md:mx-10 lg:px-[165px] md:relative lg:flex">
+      <section className="lg:bg-red lg:px-[165px] md:relative lg:flex">
         <div className="md:w-full md:h-full">
           <picture>
             <source
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="px-8 md:px-10 lg:px-[165px] flex gap-[100px]  py-[100px] lg:py-[200px]">
+      <section className="lg:bg-darkGray px-8 md:px-10 lg:px-[165px] flex gap-[100px]  py-[100px] lg:py-[200px]">
         <div>
           <h2 className="font-bold text-5xl leading-[52px] -tracking-[1.71px] lg:text-7xl lg:leading-[64px] lg:-tracking-[2px]">
             Our

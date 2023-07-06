@@ -15,7 +15,7 @@ interface IPortfolioCard {
 
 const PortfolioCard = ({ title, date, image }: IPortfolioCard) => {
   return (
-    <article className="relative hover:cursor-pointer">
+    <article className="relative hover:cursor-pointer w-full">
       <picture>
         <source media="(min-width:1024px)" srcSet={image.desktop} />
         <source media="(min-width:768px)" srcSet={image.tablet} />
